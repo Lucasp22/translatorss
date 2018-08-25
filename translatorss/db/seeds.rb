@@ -4,7 +4,7 @@ s1 = Service.create :title => '1231'
 s2 = Service.create :title => '1232'
 s3 = Service.create :title => '1233'
 
-User.destroy_all
+Users.destroy_all
 u1 = User.create :email => 'craigsy@ga.co', :password => 'chicken'
 u2 = User.create :email => 'jonesy@ga.co', :password => 'chicken'
 
