@@ -12,4 +12,11 @@
 
 class Service < ApplicationRecord
   belongs_to :user, :optional => true
+  belongs_to :from_language, :optional => true
+  belongs_to :to_language, :optional => true
+  belongs_to :document, :optional => true
+  has_many :orders, through: :users
+
+
+
 end
