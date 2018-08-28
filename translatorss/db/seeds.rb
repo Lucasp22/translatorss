@@ -24,7 +24,9 @@ Order.destroy_all
 o1 = Order.create :comment => 'Order1'
 o2 = Order.create :comment => 'Order2'
 
-
+TimeFrame.destroy_all
+t1 = TimeFrame.create :urgercy => '24'
+t2 = TimeFrame.create :urgercy => '48'
 
 
 
@@ -35,6 +37,8 @@ s2.to_language = lt2
 
 s1.document = d1
 s2.document = d2
+
+
 
 u1.services << s2
 u2.services << s1
